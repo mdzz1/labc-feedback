@@ -1,0 +1,20 @@
+{
+  "name": "labc-feedback",
+  "version": "1.0.0",
+  "repository": "https://mdzz1@github.com/mdzz1/labc-feedback.git",
+  "author": "libing <mdzz14725369@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-clean": "^0.4.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.2.3",
+    "gulp-uglify": "^3.0.0",
+    "tiny-lr": "^1.1.1"
+  },
+  "dependencies": {
+    "global": "^4.3.2",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8"
+  }
+}

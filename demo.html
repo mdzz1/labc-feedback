@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="./src/labc-feedback.js" charset="utf-8"></script>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    .container {
+      width: 100%;
+      height: 100%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    .one {
+      margin-left: 30px;
+      background-color: #fff;
+      height: 100px;
+      width: 300px;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      width: 80px;
+      height: 30px;
+      border-radius: 5px;
+      background-color: #fff;
+      line-height: 30px;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="one feedback">1大坏蛋快乐哈是的卢卡斯打死了的空间撒来得及拉三等奖拉屎撒大口径按时间段了</div>
+    <div class="one feedback">2大坏蛋快乐哈是的卢卡斯打死了的空间撒来得及拉三等奖拉屎撒大口径按时间段了</div>
+    <div class="one feedback">3大坏蛋快乐哈是的卢卡斯打死了的空间撒来得及拉三等奖拉屎撒大口径按时间段了</div>
+    <div class="one feedback">4大坏蛋快乐哈是的卢卡斯打死了的空间撒来得及拉三等奖拉屎撒大口径按时间段了</div>
+    <div id="btn_enable" class="btn">启用</div>
+    <div id="btn_disable" class="btn">禁用</div>
+  </div>
+  <script>
+    labcFeedback.init({
+      class: 'feedback',
+      back: function(val) {
+        document.body.appendChild(val)
+        console.log(val.toDataURL('image/png'))
+      }
+    })
+    document.getElementById('btn_enable').onclick = function() {
+        labcFeedback.enable()
+    }
+    document.getElementById('btn_disable').onclick = function() {
+        labcFeedback.disable()
+    }
+    // labcFeedback.enable()
+  </script>
+</body>
+
+</html>
