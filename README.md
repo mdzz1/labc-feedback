@@ -42,7 +42,7 @@ labcFeedback.init({
 #### Usage
 
 ```
-labcFeedback.disable()
+labcFeedback.enable()
 ```
 
 ### labcFeedback.disable()
