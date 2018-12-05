@@ -1,7 +1,5 @@
 ## labc-feedback
 
-![demo](./demo.png)
-
 ## How to use
 1.  repo
 
@@ -54,3 +52,5 @@ labcFeedback.disable()
 ```
 labcFeedback.disable()
 ```
+
+![demo](./demo.png)
