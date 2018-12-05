@@ -9,7 +9,7 @@ var server = tinylr()
 var port = 35729
 
 var __SRC__ = {
-  js: './src/js/*.js'
+  js: './src/*.js'
 }
 
 var __DST__ = './dist/labc-feedback/'

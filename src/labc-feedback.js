@@ -48,7 +48,7 @@
         return function() {
           html2canvas(element, {
             scale: 2
-          }).then(canvas => {
+          }).then(function(canvas) {
             labcFeedback.options.back(canvas)
           })
         }
