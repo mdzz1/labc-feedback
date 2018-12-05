@@ -1,4 +1,6 @@
-## labc-feedback
+## labc-feedback (移动端反馈)
+![By mdzz1](https://img.shields.io/badge/mdzz1-powerby-green.svg)
+![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)
 
 ## How to use
 1.  repo
@@ -12,7 +14,6 @@ git clone git@github.com:mdzz1/labc-feedback.git
 ```
 <script src="./labc-feedback/labc-feedback.min.js"></script>
 ```
-
 ---
 
 ## API
@@ -53,4 +54,5 @@ labcFeedback.disable()
 labcFeedback.disable()
 ```
 
-![demo](./demo.png)
+### 效果图
+![效果图](./demo.png)
