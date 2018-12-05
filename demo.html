@@ -55,9 +55,9 @@
   <script>
     labcFeedback.init({
       class: 'feedback',
-      back: function(val) {
-        document.body.appendChild(val)
-        console.log(val.toDataURL('image/png'))
+      back: function(canvas) {
+        document.body.appendChild(canvas)
+        console.log(canvas.toDataURL('image/png'))
       }
     })
     document.getElementById('btn_enable').onclick = function() {

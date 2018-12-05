@@ -35,13 +35,13 @@
       div.className = _CLASSNAME_
       div.style.position = 'absolute'
       div.style.backgroundColor = 'rgba(0, 0, 0, 0.1)'
-      div.style.border = '2px dashed #000'
+      div.style.border = '1px dashed #000'
       div.style.borderRadius = '5px'
       div.style.width = arr[i].offsetWidth + 'px'
       div.style.height = arr[i].offsetHeight + 'px'
       div.style.top = arr[i].offsetTop + 'px'
       div.style.left = arr[i].offsetLeft + 'px'
-      div.innerHTML = '<div style="position:absolute;right:10px;top:10px;width:60px;height:30px;background-color:#5e5e5e;border-radius:20px;color:#fff;text-align:center;line-height:30px;font-size:16px;cursor:pointer;">反馈</div>'
+      div.innerHTML = '<div style="position:absolute;right:10px;top:10px;width:60px;height:30px;background-color:#5e5e5e;border-radius:20px;color:#fff;text-align:center;line-height:30px;font-size:14px;cursor:pointer;">反馈</div>'
       // 绑定反馈按钮点击事件
       div.getElementsByTagName('div')[0].onclick = (function(ele) {
         var element = ele
