@@ -1,10 +1,12 @@
 ## labc-feedback
 
+![demo](./demo.png)
+
 ## How to use
 1.  repo
 
 ```
-git clone mdzz1@github.com:mdzz1/labc-feedback.git
+git clone git@github.com:mdzz1/labc-feedback.git
 ```
 
 2. Require labc-feedback  js file.
