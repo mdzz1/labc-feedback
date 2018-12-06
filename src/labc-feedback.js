@@ -37,23 +37,29 @@
       div.style.backgroundColor = 'rgba(0, 0, 0, 0.1)'
       div.style.border = '1px dashed #000'
       div.style.borderRadius = '5px'
-      div.style.width = arr[i].offsetWidth-2 + 'px'
-      div.style.height = arr[i].offsetHeight-2 + 'px'
-      div.style.top = arr[i].offsetTop + 'px'
-      div.style.left = arr[i].offsetLeft + 'px'
+      div.style.width = arr[i].offsetWidth - 2 + 'px'
+      div.style.height = arr[i].offsetHeight - 2 + 'px'
+      // div.style.top = arr[i].offsetTop + 'px'
+      // div.style.left = arr[i].offsetLeft + 'px'
+      div.style.top = '0px'
+      div.style.left = '0px'
       div.innerHTML = '<div style="position:absolute;right:10px;top:10px;width:60px;height:30px;background-color:#5e5e5e;border-radius:20px;color:#fff;text-align:center;line-height:30px;font-size:14px;cursor:pointer;">反馈</div>'
       // 绑定反馈按钮点击事件
-      div.getElementsByTagName('div')[0].onclick = (function(ele) {
+      div.getElementsByTagName('div')[0].onclick = (function(ele, div) {
         var element = ele
+        var obj = div
         return function() {
+          obj.style.display = 'none'
           html2canvas(element, {
             scale: 2
           }).then(function(canvas) {
+            obj.style.display = 'block'
             labcFeedback.options.back(canvas)
           })
         }
-      })(element)
-      document.body.appendChild(div)
+      })(element, div)
+      arr[i].style.position = 'relative'
+      arr[i].appendChild(div)
     }
   }
 
