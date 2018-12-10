@@ -1,8 +1,8 @@
 {
   "name": "labc-feedback",
   "version": "1.0.0",
-  "repository": "https://mdzz1@github.com/mdzz1/labc-feedback.git",
-  "author": "libing <mdzz14725369@gmail.com>",
+  "repository": "https://github.com/mdzz1/labc-feedback.git",
+  "author": "libing",
   "license": "MIT",
   "devDependencies": {
     "gulp-clean": "^0.4.0",

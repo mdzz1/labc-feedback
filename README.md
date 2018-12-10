@@ -9,7 +9,7 @@
 git clone git@github.com:mdzz1/labc-feedback.git
 ```
 
-2. Require labc-feedback  js file.
+2. Require labc-feedback  js file
 
 ```
 <script src="./labc-feedback/labc-feedback.min.js"></script>
@@ -23,7 +23,7 @@ Initialize labc-feedback
 
 name         | type     | required | description
 ------------ | -------- | -------- | ---------
-class        | Stirng   | Yes      | 可以反馈的对象classname
+class        | Stirng/Array[String]   | Yes      | 可以反馈的对象classname
 back         | Function | Yes      | 点击回调
 
 

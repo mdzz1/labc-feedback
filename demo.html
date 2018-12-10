@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title></title>
   <script src="./src/labc-feedback.js" charset="utf-8"></script>
   <style>
@@ -14,21 +16,18 @@
       padding: 0;
     }
 
-    body div {
+    div {
       box-sizing: border-box;
     }
     .container {
       width: 100%;
       height: 100%;
       background-color: #f1f1f1;
-      padding: 20px;
     }
 
     .one {
-      margin-left: 30px;
       background-color: #fff;
-      height: 100px;
-      width: 300px;
+      min-height: 100px;
       padding: 20px;
       border-radius: 5px;
       margin-bottom: 20px;
@@ -50,16 +49,20 @@
 
 <body>
   <div class="container">
-    <div class="one feedback">1大坏蛋快乐哈是的卢卡斯打死了的空间撒来得及拉三等奖拉屎撒大口径按时间段了</div>
+    <div class="one feedback">
+      <img src="http://demo.ywork.me:8082/sys/person/image.jsp?personId=164fe54dc65feec2591068d481182a2b&amp;size=m" class="">
+      1大坏蛋快乐哈是的卢卡斯打死了的空间撒来得及拉三等奖拉屎撒大口径按时间段了
+    </div>
     <div class="one feedback">2大坏蛋快乐哈是的卢卡斯打死了的空间撒来得及拉三等奖拉屎撒大口径按时间段了</div>
     <div class="one feedback">3大坏蛋快乐哈是的卢卡斯打死了的空间撒来得及拉三等奖拉屎撒大口径按时间段了</div>
-    <div class="one feedback">4大坏蛋快乐哈是的卢卡斯打死了的空间撒来得及拉三等奖拉屎撒大口径按时间段了</div>
+    <div class="one feedback1">4大坏蛋快乐哈是的卢卡斯打死了的空间撒来得及拉三等奖拉屎撒大口径按时间段了</div>
     <div id="btn_enable" class="btn">启用</div>
     <div id="btn_disable" class="btn">禁用</div>
   </div>
   <script>
     labcFeedback.init({
-      class: 'feedback',
+      class: ['feedback', 'feedback1'],
+      // class: 'feedback',
       back: function(canvas) {
         document.body.appendChild(canvas)
         console.log(canvas.toDataURL('image/png'))
