@@ -32,7 +32,7 @@ back         | Function | Yes      | 点击回调
 ```
 labcFeedback.init({
    class: 'feedback',
-   back: function(canvas) {} //返回当前页面对象的canvas
+   back: function(url) {} //url: 图片base64
 })
 ```
 
