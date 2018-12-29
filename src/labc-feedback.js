@@ -93,6 +93,7 @@
       }
     })(element, div)
     element.style.position = 'relative'
+    element.style.boxSizing = 'border-box'
     element.style.width = document.body.clientWidth + 'px'
     element.appendChild(div)
   }
