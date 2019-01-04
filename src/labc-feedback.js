@@ -59,7 +59,7 @@
     div.style.height = element.offsetHeight - 2 + 'px'
     div.style.top = '0px'
     div.style.left = '0px'
-    div.innerHTML = '<div style="position:absolute;right:10px;top:10px;width:60px;height:30px;background-color:#5e5e5e;border-radius:20px;color:#fff;text-align:center;line-height:30px;font-size:14px;cursor:pointer;">反馈</div>'
+    div.innerHTML = '<div style="position:absolute;right:10px;top:10px;width:60px;height:30px;background:rgba(0,0,0,0.6);border-radius:20px;color:#fff;text-align:center;line-height:30px;font-size:14px;cursor:pointer;">反馈</div>'
     // 绑定反馈按钮点击事件
     div.getElementsByTagName('div')[0].onclick = (function(ele, div) {
       var element = ele
